@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+        int t, i, j;
+        long long int a, b, c, d;
+        scanf("%d", &t);
+        for (i = 0; i < t; i++) {
+                int num = 0;
+                scanf("%lld %lld", &a, &b);
+                c = ceil(sqrt((float)a));
+                d = sqrt(b);
+                for (j = c; j <= d; j++)
+                        num ++;
+                printf("%d\n", num);
+        }
+        
+
+        return 0;
+}
